@@ -64,5 +64,5 @@ jobs:
           tags: |
             ${{ steps.meta.outputs.tags }}
             ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
-            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:v$(date +'%Y%m%d')
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.run_number }}
           labels: ${{ steps.meta.outputs.labels }}
