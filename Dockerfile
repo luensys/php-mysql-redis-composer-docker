@@ -1,4 +1,4 @@
-FROM php:8.3-fpm
+FROM php:8.2-fpm
 
 # php 와 연동해서 필요한 것
 RUN apt-get update && apt-get install -y \
